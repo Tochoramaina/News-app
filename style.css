@@ -6,6 +6,12 @@
 body{
     position: relative;
 }
+
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+
 nav{
     background: #555;
 }
@@ -51,4 +57,62 @@ nav a:hover{
     background: #9c98b3;
     cursor: pointer;
     color: #fff;
+}
+#searchButton:hover{
+    background: #555;
+    color: #fff;
+}
+#blogContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.blogCard{
+    width: 350px;
+    border: 1px solid #968d96;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 23px;
+    margin: 12px;
+}
+.blogCard:hover{
+    box-shadow: 4px 4px 10px rgba(201, 195, 195, 0.1);
+}
+.blogCard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.blogCard h2{
+    color: #201f1f;
+    font-weight: 500;
+    font-size: 2rem;
+
+}
+.blogCard p{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding: 0.8rem 0 0 0;
+}
+@media (max-width: 500px) {
+    .navbar {
+        padding: 1rem;
+     
+    }
+    #searchInput {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+    #searchButton {
+        padding: 9px 15px;
+        font-size: 0.9rem;
+    }
+    .blogCard {
+        width: 100%;
+       
+    }
+
 }
